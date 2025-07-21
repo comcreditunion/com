@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Global Credit Union</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Global Credit Union Logo">
+                <h1>Global Credit Union</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Dashboard</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="transfer.html">Transfer</a></li>
+                    <li><a href="loans.html">Loans</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="container">
+            <div class="welcome-section">
+                <h2>Welcome, <span id="userName">User</span></h2>
+                <p>Account Number: <span id="accountNumber"></span></p>
+            </div>
+
+            <div class="balance-card">
+                <h3>Available Balance</h3>
+                <div class="balance-amount" id="balanceAmount">$0.00</div>
+                <div class="balance-actions">
+                    <a href="transfer.html" class="btn btn-primary">Transfer Money</a>
+                    <a href="loans.html" class="btn btn-secondary">Apply for Loan</a>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="actions-grid">
+                    <a href="transfer.html" class="action-card">
+                        <img src="../images/transfer-icon.png" alt="Transfer">
+                        <span>Transfer</span>
+                    </a>
+                    <a href="#" class="action-card">
+                        <img src="../images/pay-bills.png" alt="Pay Bills">
+                        <span>Pay Bills</span>
+                    </a>
+                    <a href="#" class="action-card">
+                        <img src="../images/deposit.png" alt="Deposit">
+                        <span>Deposit</span>
+                    </a>
+                    <a href="loans.html" class="action-card">
+                        <img src="../images/loan-icon.png" alt="Loans">
+                        <span>Loans</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="recent-transactions">
+                <h3>Recent Transactions</h3>
+                <div class="transactions-list" id="transactionsList">
+                    <!-- Transactions will be loaded here -->
+                    <div class="loading">Loading transactions...</div>
+                </div>
+                <a href="transactions.html" class="view-all">View All Transactions</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Global Credit Union. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

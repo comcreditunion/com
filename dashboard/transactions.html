@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions - Global Credit Union</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Global Credit Union Logo">
+                <h1>Global Credit Union</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="transactions.html" class="active">Transactions</a></li>
+                    <li><a href="transfer.html">Transfer</a></li>
+                    <li><a href="loans.html">Loans</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="container">
+            <div class="page-header">
+                <h2>Transaction History</h2>
+                <div class="filter-options">
+                    <select id="transactionFilter">
+                        <option value="all">All Transactions</option>
+                        <option value="credit">Credits</option>
+                        <option value="debit">Debits</option>
+                    </select>
+                    <button id="exportBtn" class="btn btn-secondary">Export</button>
+                </div>
+            </div>
+
+            <div class="transactions-list" id="transactionsList">
+                <!-- Transactions will be loaded here -->
+                <div class="loading">Loading transactions...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Global Credit Union. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/transactions.js"></script>
+</body>
+</html>

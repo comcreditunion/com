@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loans - Global Credit Union</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Global Credit Union Logo">
+                <h1>Global Credit Union</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="transfer.html">Transfer</a></li>
+                    <li><a href="loans.html" class="active">Loans</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="container">
+            <div class="page-header">
+                <h2>Loan Services</h2>
+            </div>
+
+            <div class="loan-options">
+                <div class="loan-card">
+                    <h3>Personal Loan</h3>
+                    <div class="loan-details">
+                        <p><strong>Amount:</strong> Up to $50,000</p>
+                        <p><strong>Term:</strong> 1-5 years</p>
+                        <p><strong>Rate:</strong> 6.99% APR</p>
+                    </div>
+                    <button class="btn btn-primary apply-loan" data-type="personal">Apply Now</button>
+                </div>
+                <div class="loan-card">
+                    <h3>Auto Loan</h3>
+                    <div class="loan-details">
+                        <p><strong>Amount:</strong> Up to $100,000</p>
+                        <p><strong>Term:</strong> 1-7 years</p>
+                        <p><strong>Rate:</strong> 4.99% APR</p>
+                    </div>
+                    <button class="btn btn-primary apply-loan" data-type="auto">Apply Now</button>
+                </div>
+                <div class="loan-card">
+                    <h3>Home Loan</h3>
+                    <div class="loan-details">
+                        <p><strong>Amount:</strong> Up to $1,000,000</p>
+                        <p><strong>Term:</strong> 10-30 years</p>
+                        <p><strong>Rate:</strong> 3.99% APR</p>
+                    </div>
+                    <button class="btn btn-primary apply-loan" data-type="home">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="current-loans" id="currentLoans">
+                <h3>Your Current Loans</h3>
+                <div class="loans-list">
+                    <div class="loading">Loading your loans...</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Global Credit Union. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/loans.js"></script>
+</body>
+</html>

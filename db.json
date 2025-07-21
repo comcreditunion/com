@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Laura Jewelry Co",
+      "email": "laurajewelryco@artlover.com",
+      "password": "$2a$10$N9qo8uLOickgx2ZMRZoMy.MrU7rplM1QYDFQj4ChBjB7WuF5qR6qO",
+      "phone": "+1234567890",
+      "balance": 890000,
+      "accountNumber": "GCU123456789",
+      "transactions": [],
+      "loans": [],
+      "createdAt": "2023-06-15T10:00:00.000Z"
+    }
+  ],
+  "transactions": [],
+  "otp": null,
+  "otpExpires": null
+}
